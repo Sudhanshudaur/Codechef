@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,x,y,i=1;
+	cin>>t;
+	while(i<=t)
+	{
+	    cin>>x>>y;
+	    if(x>=y) cout<<"YES"<<endl;
+	    else cout<<"NO"<<endl;
+	    i++;
+	}
+}
