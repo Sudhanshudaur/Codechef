@@ -9,5 +9,5 @@ int main() {
 	    cin>>x;
 	    if((x*4)<=1000) cout<<"YES"<<endl;
 	    else cout<<"NO"<<endl;
-    }
+        }
 }
