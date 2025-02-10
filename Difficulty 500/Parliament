@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    float t,n,x;
+    cin>>t;
+	for(int i=1; i<=t; i++)
+	{
+	    cin>>n>>x;
+	    if(x>=n/2)    cout<<"YES"<<endl;
+	    else    cout<<"NO"<<endl;
+	}
+}
