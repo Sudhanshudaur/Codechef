@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,n,f,l;
+	cin>>t;
+	for(int i=1; i<=t; i++)
+    {
+	    cin>>n;
+	    if(n == n%10) cout<<2*n<<endl;
+	    else
+	    {
+	    f = n%10;
+	    n = n/10;
+	    while(n != n%10)
+	    {
+	        n = n/10;
+	    }
+	    l = n;
+	    cout<<f+l<<endl;
+	    }
+    }
+}
