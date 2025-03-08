@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,x,y,rule;
+	cin>>t;
+	for(int i=1; i<=t; i++)
+	{
+	    cin>>x>>y;
+	    rule = x+(x*0.07);
+	    if(y<=rule)  cout<<"YES"<<endl;
+	    else  cout<<"NO"<<endl;
+	}
+}
