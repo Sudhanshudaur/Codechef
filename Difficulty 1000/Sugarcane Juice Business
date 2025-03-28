@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,n,s;
+	cin>>t;
+	for(int i=1; i<=t; i++)
+	{
+	    cin>>n;
+	    s = 50*0.3*n;
+	    cout<<s<<endl;
+	}
+}
