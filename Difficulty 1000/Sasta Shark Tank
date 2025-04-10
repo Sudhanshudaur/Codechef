@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,a,b;
+    cin>>t;
+    for(int i=1; i<=t; i++)
+    {
+     cin>>a>>b;
+     if ((a*100/10)>(b*100/20))  cout<<"FIRST"<<endl;
+     else if ((a*100/10)<(b*100/20))   cout<<"SECOND"<<endl;
+     else  cout<<"ANY"<<endl;
+    }
+}
