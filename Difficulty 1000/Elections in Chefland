@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,n,x,cnt;
+	cin>>t;
+	for(int i=1; i<=t; i++)
+	{
+	    cin>>n>>x;
+	    int a[n];
+	    cnt = 0;
+	    for (int k=0; k<=n-1; k++)
+	    {
+	    cin>>a[k];
+	    if (x<=a[k])  cnt++;
+	    }
+	    cout<<cnt<<endl;
+	}
+}
