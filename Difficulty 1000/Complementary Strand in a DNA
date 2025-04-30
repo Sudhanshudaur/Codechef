@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,n;
+	cin>>t;
+	for(int i=1; i<=t; i++)
+	{
+	    cin>>n;
+	    char a[n];
+	    for(int i=0; i<n; i++)
+	    {
+	        cin>>a[i];
+	    }
+	    for(int i=0; i<n; i++)
+	    {
+	        if (a[i]=='A')         cout<<"T";
+	        else if (a[i]=='T')    cout<<"A";
+	        else if (a[i]=='C')    cout<<"G";
+	        else                   cout<<"C";
+	    }
+	    cout<<endl;
+	}
+}
