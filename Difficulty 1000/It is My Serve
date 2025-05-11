@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,p,q,n;
+	cin>>t;
+	for(int i=1; i<=t; i++)
+	{
+	    cin>>p>>q;
+	    n = p+q+1;
+	    if (n%4==1 || n%4==2)   cout<<"Alice"<<endl;
+	    else                    cout<<"Bob"<<endl;
+	}
+}
