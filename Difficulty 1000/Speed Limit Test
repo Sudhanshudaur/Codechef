@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	float t,x,y,a,b,n1,n2;
+	cin>>t;
+	while(t--)
+	{
+	  cin>>a>>x>>b>>y;
+	  n1 = a/x;  n2 = b/y;
+	  if (n1>n2)         cout<<"Alice"<<endl;
+	  else if (n1<n2)    cout<<"Bob"<<endl;
+	  else               cout<<"Equal"<<endl;
+	}
+}
