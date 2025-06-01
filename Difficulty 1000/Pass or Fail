@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,n,x,p;
+	cin>>t;
+	while (t--)
+	{
+	    cin>>n>>x>>p;
+	    if ((x*3-(n-x)*1)>=p)    cout<<"PASS"<<endl;
+	    else                     cout<<"FAIL"<<endl;
+	}
+}
