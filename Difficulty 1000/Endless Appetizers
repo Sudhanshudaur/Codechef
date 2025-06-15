@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	 int t,x,y,r,ans;
+	 cin>>t;
+	 while(t--)
+	 {
+	     cin>>x>>y>>r;
+	     ans = ceil((double)(x+(r/30))/y);
+	     cout<<ans<<endl;
+	 }
+}
