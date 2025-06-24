@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,a,b,k;
+	cin>>t;
+	while (t--)
+	{
+	    cin>>a>>b>>k;
+	    int z = abs(a-b);
+	    if (z%k==0)  cout<<z/k<<endl;
+	    else         cout<<z/k+1<<endl;
+	}
+}
