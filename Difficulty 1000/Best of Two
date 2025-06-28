@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,a[3],b[3],min1,min2,s1,s2;
+	cin>>t;
+	while (t--)
+	{   
+	    s1 = 0; s2 = 0;
+	    for(int i=0; i<3; i++)
+	    {
+	        cin>>a[i];
+	        if (i==0)  min1 = a[i];
+	        if (a[i]<min1)  min1 = a[i];
+	    }
+	    for (int i=0; i<3; i++)
+	    {
+	        cin>>b[i];
+	        if (i==0)  min2 = b[i];
+	        if (b[i]<min2)  min2 = b[i];
+	    }
+	    s1 = a[0]+a[1]+a[2]-min1;
+	    s2 = b[0]+b[1]+b[2]-min2;
+	    if (s1==s2)      cout<<"TIE"<<endl;
+	    else if (s1>s2)  cout<<"ALICE"<<endl;
+	    else             cout<<"BOB"<<endl;
+	}
+}
