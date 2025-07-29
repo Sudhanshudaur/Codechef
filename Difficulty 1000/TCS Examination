@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int d1, d2, d3, s1, s2, s3, td, ts;
+        cin >> d1 >> d2 >> d3;
+        td = d1 + d2 + d3;
+        cin >> s1 >> s2 >> s3;
+        ts = s1 + s2 + s3;
+        bool fg;
+        if (td > ts)
+            cout << "DRAGON" << endl;
+        else if (ts > td)
+            cout << "SLOTH" << endl;
+        else {
+            if (d1 > s1)
+                cout << "DRAGON" << endl;
+            else if (s1 > d1)
+                cout << "SLOTH" << endl;
+            else {
+                if (d2 > s2)
+                    cout << "DRAGON" << endl;
+                else if (s2 > d2)
+                    cout << "SLOTH" << endl;
+                else {
+                    if (d3 > s3)
+                        cout << "DRAGON" << endl;
+                    else if (s3 > d3)
+                        cout << "SLOTH" << endl;
+                    else
+                        cout << "TIE" << endl;
+                }
+            }
+        }
+    }
+    return 0;
+}
