@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N, K;
+        cin >> N >> K;
+        vector<int> A(N);
+        for (int i = 0; i < N; ++i) {
+            cin >> A[i];
+        }
+
+        int stored = 0;
+        bool enough = true;
+
+        for (int i = 0; i < N; ++i) {
+            stored += A[i];
+            if (stored < K) {
+                cout << "NO " << (i + 1) << endl;
+                enough = false;
+                break;
+            } else {
+                stored -= K;
+            }
+        }
+
+        if (enough) {
+            cout << "YES" << endl;
+        }
+    }
+    return 0;
+}
