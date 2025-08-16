@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--){
+	    int a,b;
+	    cin>>a>>b;
+	    int i=1;
+	    bool fg = 0;
+	    while(true){
+	        a = a-i;
+	        b = b-i-1;
+	        if(a<0) {fg = 0; break;}
+	        if(b<0) {fg = 1; break;}
+	        i=i+2;
+	    }
+	    if(fg) cout<<"Limak"<<endl;
+	    else   cout<<"Bob"<<endl;
+	}
+}
