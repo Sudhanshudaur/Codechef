@@ -1,0 +1,41 @@
+****************************************************************************************************************************
+                                                        BEST
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        long long n;
+        cin >> n;
+        long long even = n / 2;
+        long long odd = (n + 1) / 2;
+        long long ans = 2 * odd * even;
+        cout << ans << endl;
+    }
+    return 0;
+}
+
+****************************************************************************************************************************
+                                                      BRUTE FORCE (Me)
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+        int ans = 0;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if ((i + j) % 2 == 1) ans++;
+            }
+        }
+        cout << ans << endl;
+    }
+}
+****************************************************************************************************************************
