@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int zA = 0, oA = 0, zB = 0, oB = 0, n = 0;
+        cin >> n;
+        string A, B;
+        cin >> A;
+        cin >> B;
+        for (int i = 0; i < n; i++)
+        {
+            if (A[i] == '0') zA++;
+            else oA++;
+            if (B[i] == '0') zB++;
+            else oB++;
+        }
+        if (zA == zB && oA == oB) cout << "YES" << endl;
+        else cout << "NO" << endl;
+    }
+}
