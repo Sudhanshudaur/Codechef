@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int x = 0, y = 0, z = 0;
+        cin >> x >> y >> z;
+        if (y <= x) cout << "PIZZA" << endl;
+        else if (z <= x && x < y) cout << "BURGER" << endl;
+        else cout << "NOTHING" << endl;
+    }
+}
