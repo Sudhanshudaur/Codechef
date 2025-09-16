@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t, n, num;
+    cin >> t;
+    while (t--)
+    {
+        int sum = 0;
+        bool hasOdd = false;
+        cin >> n;
+        for (int i = 1; i <= n; i++) {
+            cin >> num;
+            sum += num;
+            if (num % 2 != 0) {
+                hasOdd = true;
+            }
+        }
+        if (sum % 2 == 0 && hasOdd) cout << "YES" << endl;
+        else cout << "NO" << endl;
+    }
+}
