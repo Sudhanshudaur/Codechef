@@ -1,0 +1,58 @@
+************************************************************************************************************************
+// CODED BY ME [T(n) = O(n^2)]
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+        int t;
+        cin >> t;
+        while (t--) {
+            int n, x, y, atk = 0;
+            cin >> n >> x >> y;
+            for (int i = 1; i <= n; i++){
+                for (int j = 1; j <= n; j++) {
+                    if (i == x && (j != y)) {
+                        atk++;
+                        continue;
+                    }
+                    if (j == y && (i != x)) {
+                        atk++;
+                        continue;
+                    }
+                    if (abs(x - i) == abs(y - j) && (i != x)) {
+                        atk++;
+                        continue;
+                    }
+                }
+            }
+        cout<<atk<<endl;
+    }
+}
+************************************************************************************************************************
+// BEST SOLUTION
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n, x, y;
+        cin >> n >> x >> y;
+
+        // Calculate horizontal and vertical attacks
+        int attacks = 2 * (n - 1);
+
+        // Calculate diagonal attacks
+        attacks += min(x - 1, y - 1); // Top-left
+        attacks += min(x - 1, n - y); // Top-right
+        attacks += min(n - x, y - 1); // Bottom-left
+        attacks += min(n - x, n - y); // Bottom-right
+
+        cout << attacks << endl;
+    }
+    return 0;
+}
+************************************************************************************************************************
